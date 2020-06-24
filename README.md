@@ -26,7 +26,7 @@
 2. 把左右子树遍历出去两个列表。
 3. 循环两个列表，填充左右子树到根节点i上。
 
-## 100. [相同的树] (https://leetcode-cn.com/problems/same-tree/)
+## 100. [相同的树](https://leetcode-cn.com/problems/same-tree/)
 
 ### 题目
 给定两个二叉树，编写一个函数来检验它们是否相同。
