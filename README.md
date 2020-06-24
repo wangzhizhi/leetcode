@@ -1,4 +1,4 @@
-## 1038.中序遍历 - 左根右(https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree)
+## 1038.[中序遍历 - 左根右](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree)
 
 ### 题目
 给出二叉 搜索 树的根节点，该二叉树的节点值各不相同，修改二叉树，使每个节点 node 的新值等于原树中大于或等于 node.val 的值之和。
@@ -15,7 +15,7 @@
 - 又 此题为修改原节点，故 不需要新建数组
 - so 先递归遍历左子树，若没有左子树，将该节点的值累加，再递归调用右子树-->判断右子树是否有左子树，再进行循环递归调用。
 
-## 95. 不同的二叉搜索树 II(https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
+## 95. [不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
 
 ### 题目
 给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。
@@ -25,3 +25,15 @@
 1. 取一个i为根节点，那么左子树就是i - 1 个，又子树 n - i个
 2. 把左右子树遍历出去两个列表。
 3. 循环两个列表，填充左右子树到根节点i上。
+
+## 100. [相同的树] (https://leetcode-cn.com/problems/same-tree/)
+
+### 题目
+给定两个二叉树，编写一个函数来检验它们是否相同。
+
+如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
+
+### 思路
+解法三：
+    前序遍历，若两个节点不同，则返回false。
+    若一个先为null了，则返回false。
